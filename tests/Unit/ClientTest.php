@@ -35,30 +35,6 @@ class ClientTest extends TestCase
             ]);
     }
 
-//    public function testsClientUpdatedCorrectly()
-//    {
-//        $user = factory(User::class)->create();
-//        $token = $user->generateToken();
-//        $headers = ['Authorization' => "Bearer $token"];
-//        $article = factory(Article::class)->create([
-//            'title' => 'First Article',
-//            'body' => 'First Body',
-//        ]);
-//
-//        $payload = [
-//            'title' => 'Lorem',
-//            'body' => 'Ipsum',
-//        ];
-//
-//        $response = $this->json('PUT', '/api/articles/' . $article->id, $payload, $headers)
-//            ->assertStatus(200)
-//            ->assertJson([
-//                'id' => 1,
-//                'title' => 'Lorem',
-//                'body' => 'Ipsum'
-//            ]);
-//    }
-
     public function testsClientDeletedCorrectly()
     {
         $client = factory(Client::class)->create([
